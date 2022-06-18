@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./file.js" defer></script>
+  
+  <title>Frontend Mentor | Interactive comments section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+<body id="body">
+
+  <!-- Pull dynamic content from the data.json file -->
+
+
+  <div class="container">
+    <div class="comment_content">
+      <div class="reacts">
+        <img class="plus" id="plus" src="./images/icon-plus.svg" alt="+">
+        <span class="number" id="reacts-number">12</span>
+        <img class="mins" id="mins" src="./images/icon-minus.svg" alt="-">
+      </div>
+      <div class="content">
+        <div class="comment_header">
+          <div class="personal_info">
+            <img src="./images/avatars/image-amyrobson.png" alt="img" class="personal_img">
+            <span class="name">amyrobson</span>
+            <span class="time">1 month ago</span>
+          </div>
+          <button class="reply">
+            <img src="./images/icon-reply.svg" alt="reply" class="reply_image">
+            <span class="reply_word" id="reply">Reply</span>
+          </button>
+        </div>
+        <div class="comment_paragraph">
+          <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quisquam voluptatem dicta necessitatibus voluptates totam.</p>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container active" id="reply-box">
+    <div class="reply_content">
+     <img class="personal_image" src="./images/avatars/image-juliusomo.png" alt="person">
+      <textarea name="reply" id="text" placeholder="Type your reply :"></textarea>
+     <button id="reply_for_comment">Reply</button>
+    </div>
+  </div>  
+
+  <div class="container active" id="comment">
+    <div class="comment_content replied">
+      <div class="reacts">
+        <img class="plus" id="plus" src="./images/icon-plus.svg" alt="+">
+        <span class="number" id="reacts-number">12</span>
+        <img class="mins" id="mins" src="./images/icon-minus.svg" alt="-">
+      </div>
+      <div class="content">
+        <div class="comment_header">
+          <div class="personal_info">
+            <img src="./images/avatars/image-juliusomo.png" alt="img" class="personal_img">
+            <span class="name">amyrobson</span>
+            <span class="time">1 month ago</span>
+          </div>
+          <button class="reply">
+            <img src="./images/icon-delete.svg" alt="delete" class="delete_image">
+            <span class="reply_word" id="delete">Delete</span>
+          </button>
+          <button class="reply">
+            <img src="./images/icon-edit.svg" alt="edit" class="edit_image">
+            <span class="reply_word" id="edit">Edit</span>
+          </button>
+        </div>
+        <div class="comment_paragraph">
+          <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quisquam voluptatem dicta necessitatibus voluptates totam.</p>
+         <div class="update_btn"> 
+          <button id="update">Update</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+
+ 
+  
+
+  
+   <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mohamed Hassan Eldoma</a>.
+  </div> 
+</body>
+</html>
